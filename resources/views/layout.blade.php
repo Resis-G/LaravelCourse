@@ -54,7 +54,7 @@
                                     <a href="{{route('messages.index')}}" class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white {{ request()->routeIs('messages.index') ? 'text-sky-600 dark:text-white' : 'text-slate-400' }}">
                                         Mensajes
                                     </a>
-                                    @if (auth()->user()->hasRoles(['admin','student']))
+                                    @if (auth()->user()->hasRoles(['admin']))
                                         <a href="{{route('users.index')}}" class="px-3 py-2 text-sm font-medium rounded-md hover:text-sky-600 dark:hover:text-white {{ request()->routeIs('users.index') ? 'text-sky-600 dark:text-white' : 'text-slate-400' }}">
                                             Usuarios
                                         </a>

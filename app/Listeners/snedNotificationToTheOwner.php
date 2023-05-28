@@ -6,7 +6,7 @@ use App\Events\MessageWasReceived;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 
-class snedNotificationToTheOwner
+class snedNotificationToTheOwner 
 {
     /**
      * Handle the event.

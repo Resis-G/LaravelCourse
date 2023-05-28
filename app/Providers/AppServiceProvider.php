@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\MessagesInterfaces;
+use App\Repositories\CacheMessages; 
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -15,10 +17,13 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap any application services. 
      */
     public function boot(): void
     {
-        //
+        $this->app->bind(
+            MessagesInterfaces::class,
+            CacheMessages::class
+        );
     }
 }

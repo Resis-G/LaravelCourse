@@ -8,19 +8,11 @@
         
         @foreach($messages as $message)
             <div class="max-w-3xl px-4 py-2 space-y-4 bg-white rounded shadow dark:bg-slate-800">
-                @if ($message->user_id)
-                    <h2 class="text-xl text-slate-600 dark:text-slate-300 hover:underline">
-                        <a href="{{route('messages.show',$message->id)}}">
-                            {{$message->user->name }}
-                        </a>
-                    </h2>
-                @else
-                    <h2 class="text-xl text-slate-600 dark:text-slate-300 hover:underline">
-                        <a href="{{route('messages.show',$message->id)}}">
-                            {{$message->nombre }}
-                        </a>
-                    </h2>
-                @endif
+                <h2 class="text-xl text-slate-600 dark:text-slate-300 hover:underline">
+                    <a href="{{route('messages.show',$message->id)}}">
+                        {{$message->present()->UserName() }}
+                    </a>
+                </h2>
                 
                 <div class="flex justify-between">
                     <a class="inline-flex items-center text-xs font-semibold tracking-widest text-center uppercase transition duration-150 ease-in-out dark:text-slate-400 text-slate-500 hover:text-slate-600 dark:hover:text-slate-500 focus:outline-none focus:border-slate-200" href="{{route('messages.edit',$message->id)}}">Edit</a>
