@@ -18,13 +18,13 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 import Echo from 'laravel-echo';
 import io from "socket.io-client"
 
-//import Pusher from 'pusher-js';
+//import Pusher from 'pusher-js';zz
 //window.Pusher = Pusher;
 window.io= io;
 
 window.Echo = new Echo({
     broadcaster: 'socket.io',
-    host: 'http://127.0.0.1:6001'
+    host: 'http://blog.test:6001'
     /*key: import.meta.env.VITE_PUSHER_APP_KEY,
     cluster: import.meta.env.VITE_PUSHER_APP_CLUSTER ?? 'mt1',
     wsHost: import.meta.env.VITE_PUSHER_HOST ? import.meta.env.VITE_PUSHER_HOST : `ws-${import.meta.env.VITE_PUSHER_APP_CLUSTER}.pusher.com`,
