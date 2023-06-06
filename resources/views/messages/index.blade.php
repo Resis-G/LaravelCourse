@@ -4,7 +4,7 @@
     <h1 class="my-4 font-serif text-3xl text-center text-sky-600 dark:text-sky-500">Todos los mensajes</h1>
     
             
-    <main class="grid w-full gap-4 px-4 max-w-7xl sm:grid-cols-2 md:grid-cols-3">
+    <main class="grid w-full gap-4 px-4  sm:grid-cols-2 md:grid-cols-3">
         
         @foreach($messages as $message)
             <div class="max-w-3xl px-4 py-2 space-y-4 bg-white rounded shadow dark:bg-slate-800">

@@ -13,8 +13,9 @@ use Illuminate\Queue\SerializesModels;
 class MessageWasReceived implements ShouldBroadcast
 {
 
-    public $message;
+    
     use Dispatchable, InteractsWithSockets, SerializesModels;
+    public $message;
 
     /**
      * Create a new event instance.
@@ -30,10 +31,10 @@ class MessageWasReceived implements ShouldBroadcast
      *
      * @return array<int, \Illuminate\Broadcasting\Channel>
      */
-    public function broadcastOn(): array
+    public function broadcastOn()
     {
-        return [
-            new Channel('messages-channel'),
-        ];
+    
+            new Channel('messages-channel');
+        
     }
 }

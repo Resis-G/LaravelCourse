@@ -6,8 +6,6 @@ use App\Events\MessageWasReceived;
 use App\Http\Requests\CreateMessageRequests;
 use App\Repositories\MessagesInterfaces;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cache;
-
 
 class MessagesController extends Controller
 {

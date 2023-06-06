@@ -1,7 +1,7 @@
 @extends('layout')
 @section('contenido')
     <h1 class="my-4 font-serif text-3xl text-center text-sky-600 dark:text-sky-500">Usuarios</h1>
-    <main class="grid w-full gap-4 px-4 max-w-5xl sm:grid-cols-2 md:grid-cols-3">
+    <main class="grid w-full gap-4 px-4  sm:grid-cols-2 md:grid-cols-3">
         @foreach($users as $user)
             <div class="max-w-3xl px-4 py-4 space-y-4 bg-white rounded shadow dark:bg-slate-800">
                 <h2 class="text-xl text-slate-600 dark:text-slate-300 hover:underline">

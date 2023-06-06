@@ -8,5 +8,5 @@ $('form').on('sunmit',function(){
 
 Echo.channel('messages-channel')
     .listen('MwssageWasReceived',(data)=>{
-        console.log(data);
+        console.log(data)
     })
